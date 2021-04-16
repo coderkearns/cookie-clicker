@@ -1,0 +1,15 @@
+{
+  "name": "cookie-clicker",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "browserify src/index.js -o dist/bundle.js",
+    "dev": "watchify src/index.js -o dist/bundle.js -v"
+  },
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "watchify": "^4.0.0"
+  },
+  "devDependencies": {},
+  "author": "Carter Kearns <coder.kearns@gmail.com> (https://github.com/coderkearns)",
+  "license": "ISC"
+}
