@@ -15,7 +15,7 @@ const CookieClicker = {
 
     this.btn.onclick = (e) => this.click()
     this.buynextBtn.onclick = (e) => this.buyNext()
-    this.img.src = "dist/img/"+data.cookieTypes[this.cookieType].img + ".png"
+    this.img.src = `dist/img/${data.cookieTypes[this.cookieType].img}.png`
   },
   save() {
     let save = JSON.stringify({
@@ -27,7 +27,7 @@ const CookieClicker = {
   },
   update() {
     this.label.innerText = this.cookies
-    this.img.src = "dist/img/"+data.cookieTypes[this.cookieType].img + ".png"
+    this.img.src = `dist/img/${data.cookieTypes[this.cookieType].img}.png`
     this.cookieName.innerText = data.cookieTypes[this.cookieType].name
     this.buynextBtn.innerText = data.cookieTypes[this.cookieType+1].cost
     this.bonus = data.cookieTypes[this.cookieType].bonus
